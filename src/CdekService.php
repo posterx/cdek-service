@@ -5,8 +5,8 @@ namespace CdekService;
 class CdekService{
 
     // auth
-    protected static $account = false; //укажите логин
-    protected static $key     = false; //укажите ключ
+    protected static $account;
+    protected static $key;
 
 
     protected static $tarifPriority = false;
@@ -18,6 +18,11 @@ class CdekService{
             'courier' => $arCourier,
             'pickup'  => $arPickup
         );
+    }
+
+    public static function setCredentials($account, $key){
+        self::$account = $account;
+        self::$key = $key;
     }
 
     public static function getPVZ()
