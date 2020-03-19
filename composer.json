@@ -1,0 +1,12 @@
+{
+  "name": "posterx/cdek-service",
+  "description": "CDEK widget PHP class",
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "CdekService\\": "src/"
+    }
+  }
+}
