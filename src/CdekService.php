@@ -31,13 +31,15 @@ class CdekService{
         if ($arPVZ) {
             self::toAnswer(array('pvz' => $arPVZ));
         }
-        self::printAnswer();
+
+        return self::getAnswer();
     }
 
     public static function getLang()
     {
         self::toAnswer(array('LANG' => self::getLangArray()));
-        self::printAnswer();
+
+        return self::getAnswer();
     }
 
     public static function calc($data)
@@ -421,5 +423,9 @@ class CdekService{
     protected static function printAnswer()
     {
         echo json_encode(self::$answer);
+    }
+
+    protected static function getAnswer(){
+        return self::$answer;
     }
 }
