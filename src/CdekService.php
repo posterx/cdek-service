@@ -1,5 +1,7 @@
 <?php
 
+namespace CdekService;
+
 class CdekService{
 
     // auth
