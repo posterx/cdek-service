@@ -4,6 +4,9 @@ namespace CdekService;
 
 class CdekService{
 
+    const PVZ = 'getPVZ';
+    const LANG = 'getLang';
+
     // auth
     protected static $account;
     protected static $key;
